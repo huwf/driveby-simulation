@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DriveByDownload.Classes.Browser">
+    <Position X="1.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAEAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Classes\Browser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriveByDownload.Classes.Website">
+    <Position X="6" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAQAAAAAEAgAAAAIAISAqAAACAAAAQAASQA=</HashCode>
+      <FileName>Classes\Website.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriveByDownload.Classes.CMS">
+    <Position X="8" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAQAAAAAQAAAAAAAAAAgAAAAAABAA=</HashCode>
+      <FileName>Classes\CMS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriveByDownload.Classes.Host">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAQAAAAAQAAAICAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Host.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriveByDownload.Classes.Plugin">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAEAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Plugin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriveByDownload.Classes.Vulnerability">
+    <Position X="9.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAEAAAIAAAACEAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Classes\Vulnerabilities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DriveByDownload.Classes.User">
+    <Position X="1.25" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACQAAAAAAAwAABCAAAQAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

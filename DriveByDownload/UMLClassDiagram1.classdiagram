@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="2058b40d-907b-4d74-b3b9-b8c0b1ccec74" name="UMLClassDiagram1" linkedPackageId="2d924f6d-7789-46c5-be95-2405288d0bca" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="b99e20eb-392b-4bd9-a31b-f187a1534ce9">
+      <profileInstance Id="365bb5af-33ee-4e79-ace5-8934df63995c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="eef5e714-a5bd-43eb-9977-42bfabebaceb">
+      <profileInstance Id="dc268f38-cc92-4cbf-8d8b-4aed4c085083" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f5cd2fb1-f47d-4149-acc8-2617347aca2b" name="Website" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c59cdb49-143d-4180-ad06-9b871732c332" />
+        <targetEnds>
+          <association Id="845ef8e9-8846-4c05-ad2d-18be10f32241" isDerived="false" sourceEndRoleName="WebServer" targetEndRoleName="CMS" isLeaf="false" isAbstract="false">
+            <classMoniker Id="0a75bee0-52ed-4549-8f15-37e89f47313b" LastKnownName="CMS" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8aff86b4-44f7-4396-8dc0-884433bb397d" name="WebServer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5ae82d0d-572e-4a91-9233-cc5ad05d3972" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9a9468c9-df3c-47b0-ab8c-627352d5be7d" name="CMS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ee9eb476-563b-4950-ba4c-ed0968e73761" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="567f655c-d8d7-4232-a6ba-6425b44b96a8" />
+          </association>
+          <association Id="4fdbbeb8-637a-4bcc-a7fa-c23b3dd10daf" isDerived="false" sourceEndRoleName="Website" targetEndRoleName="CVE" isLeaf="false" isAbstract="false">
+            <classMoniker Id="09335824-b45a-4055-b6a7-47b4da3ca281" LastKnownName="CVE" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d5ced838-73f0-4902-b934-edbc422bbd0c" name="Website" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="02e27f61-e923-4e56-9d7b-c43cf8812213" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2097b37-ad5f-4c27-b479-60b67f6e69d0" name="CVE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="09b0c4fc-2e6b-46a8-a5a2-0bb779f998e7" name="Lower" value="1">
+                      <elementDefinition Id="55194cad-2980-4f05-96b0-9c21742703cc" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2f0aa86a-b0c1-4bb7-acd4-e5dc08ab16df" name="Upper" value="*">
+                      <elementDefinition Id="0172d8cd-049e-471b-9b96-d6ceea4dbfc6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="25612785-64fc-4531-95cd-a665d4a7a471" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fc70696d-04a7-4be9-b51e-7957ac93c966" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="d5b40764-186f-4198-9d0a-e9c3ee2be290" name="CMS" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9b4ae10f-fbe3-44d1-8b03-0e3ffc33a85c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="055b7807-6694-4b01-934d-458daa8177a8" LastKnownName="CMS" />
+            </type_NamedElement>
+          </property>
+          <property Id="5b32b324-2cb2-44c7-bd33-49584b60b5b2" name="HostingProvider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a15601f6-ec04-4ad4-aca7-1714d235a775" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f46ebe73-0f2a-4f11-b797-9c456921b4d2" LastKnownName="Host" />
+            </type_NamedElement>
+          </property>
+          <property Id="fdd871d9-2f22-46d4-8a92-28bd056e7e31" name="VisitsPerDay" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a55582c8-dbc5-430c-b571-fa26ddfaea36" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ee1495a7-9457-42cf-88ea-ba150a991c8e" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="6273b9a5-b577-4b7d-bc97-28b17ba304af" name="IsCompromised" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="46ae1200-07fd-4629-8f13-bafd57a10b3e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9f86888c-92e0-4425-9715-d8a124cc7fbb" LastKnownName="Boolean" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="c0e03c30-2f89-4c8f-a685-d08243e6389f" name="DefaultValue" value="False">
+                <elementDefinition Id="da2cf29f-5894-4892-9311-91b3085ef4e8" />
+              </literalString>
+            </defaultValue>
+          </property>
+          <property Id="eeab17b5-403c-467b-8f00-a31c0600dd37" name="IsVulnerable" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d6c683b6-c7ce-4232-a424-55ab75048dff" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="b76bdb2c-6806-4344-8d13-50c428820a6e" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+          <property Id="a3008dab-3fc6-481b-b9c9-116244c3f8bd" name="URL" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="66703786-04dc-4403-a4d8-881eb40e5db1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ed479e15-47d7-4ad3-a4db-dd5af4ef2e24" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="406aa6ac-85e5-4e9b-89ef-2a07a721186a" name="IsBlacklisted" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5c3e73aa-9877-487c-bc30-e8a46b60ed72" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3c133ec3-b365-4874-a499-fc358ab7dbaa" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+          <property Id="e2f7e271-fc90-414a-a366-8c0dc025c0e6" name="CVEs" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dea15802-a2c7-4c84-82cf-40d190c038fb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2c3779a8-5556-4e26-9bf6-f2bcade66711" LastKnownName="CVE" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="11c2447b-e1ae-4946-94d0-a0459d97b795" name="Attack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3a572825-4ef0-4232-ba30-0f42424bc38e" />
+          </operation>
+          <operation Id="baebeb14-3bc4-42cb-b07c-e9ab9f9ff725" name="DisplayPage" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9e63e805-daed-433e-a256-dfcae1165a1e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e1380f34-07a5-4c48-9eb8-338c4bcf1355" name="User" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="91e775f6-1dcf-4cd2-ab26-b2ed4fc73118" />
+        <targetEnds>
+          <association Id="b0cd6781-3762-441c-bb60-b6930fcba8cd" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Browser" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8bdb3aa2-ce9a-4207-9a3f-bbd2afd8e940" LastKnownName="Browser" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5e4b9e70-7c3e-41d0-92f9-3f21868bc241" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3484b72d-63de-4985-bfbd-029745fe7fcd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c11f2fbf-72d7-4c11-8281-dc048fc368ff" name="Browser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6950ba9e-a42a-4f81-ac3b-e7b0faa1b947" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="72a3b6fb-78e6-46ba-bf5e-1443b01df911" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="576721c4-50bc-458f-8ac7-5b88f165915f" name="Browser" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="87554fb3-8e26-4fd2-9977-d0150da90a30" />
+          </property>
+          <property Id="61d528c7-bcfd-4d42-9bce-18fcbc9b217c" name="IsCompromised" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2fe05e24-f4f5-44ec-b820-5e3223631711" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c098f5fa-dfc2-42dd-ac41-90db24874bcc" LastKnownName="Boolean" />
+            </type_NamedElement>
+            <defaultValue>
+              <literalString Id="bfd723fc-2f68-4ca7-8074-6e1e3c6a070d" name="DefaultValue" value="False">
+                <elementDefinition Id="c281db4d-9e13-4601-9a04-ff24f5cd7b68" />
+              </literalString>
+            </defaultValue>
+          </property>
+          <property Id="f31fb9f1-a90a-47ff-b6e0-f39c37c169af" name="TimeCompromised" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6073f86c-81dc-498e-aa04-a9dc64b7f2f1" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3dea8168-439b-49b7-8d50-3f6331cbc755" name="VisitWebsite" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0c473bcf-36d6-4d68-b62b-c62e03ee7714" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1d97a8df-6ba3-4061-8677-4ab30524fbe4" name="url" direction="In" isUnique="false">
+                  <elementDefinition Id="4d8f0531-d819-4b2b-b5e5-58802018a830" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7aa44159-cd3e-425f-a36f-5e55bf32e7fd" name="Host" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="36c848de-273b-4183-a9e5-5eae54a8d765" />
+        <targetEnds>
+          <association Id="65a98c3c-8347-4184-895c-5ac299a15433" isDerived="false" sourceEndRoleName="Host" targetEndRoleName="Website" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f5cd2fb1-f47d-4149-acc8-2617347aca2b" LastKnownName="Website" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="702aea91-8cdb-4ec7-ab6c-ce5ef157e719" name="Host" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cdae29dc-2133-438b-b0d7-333604f450e6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ebba2df2-fd38-425f-a3bd-de6ee8d73218" name="Website" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="0b6d0afd-97f0-4939-9edf-41d0d20980b6" name="Lower" value="1">
+                      <elementDefinition Id="c56250ea-3639-4b25-bc2a-864c1558441b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="74dee9a2-edf0-4d49-aa88-6c50c5be56a4" name="Upper" value="*">
+                      <elementDefinition Id="5705d8ef-835c-4c3e-925c-29d948f960cd" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="028ee1e1-7206-4652-85fd-0abc48ce4fe8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="220ca684-101e-4199-b920-42effd695a35" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="d2343e61-cb89-46ae-9d15-c58f88ad2789" name="Countries" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="deb17ff9-a8b5-4ab2-9eb9-deb21475d7d2" />
+          </property>
+          <property Id="abbe301b-c631-4ddb-913e-44799205ce0b" name="Servers" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eef507b5-3605-47e3-9fd7-f181e81be0ae" />
+          </property>
+          <property Id="99dd75a0-5d4c-4ad1-9de4-70f13c9cf4c5" name="ScansWebsites" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eeff4d6f-6f09-4e22-889c-9d8be050fc7a" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="b76bdb2c-6806-4344-8d13-50c428820a6e" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f46ebe73-0f2a-4f11-b797-9c456921b4d2" name="Host" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Host">
+        <elementDefinition Id="36c848de-273b-4183-a9e5-5eae54a8d765" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0a75bee0-52ed-4549-8f15-37e89f47313b" name="CMS" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="79c354b1-e168-475f-b23f-c3fbee0b482c" />
+        <targetEnds>
+          <association Id="b6cff9fb-41c7-4b18-8cd0-b0afc0795e54" isDerived="false" sourceEndRoleName="CMS" targetEndRoleName="Plugin" isLeaf="false" isAbstract="false">
+            <classMoniker Id="61ed5e99-53a0-465e-9af5-44d176724f3a" LastKnownName="Plugin" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b4e60965-b889-4406-8dca-b6aa1dc1b2cd" name="CMS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="39a65dcc-92c9-4ce2-8306-c62f7ae69e1f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="56a55289-f3a8-417e-a3d8-ed084e2ef059" name="Plugin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="563a6f51-89c2-480b-9e2c-01cc3730a19e" name="Lower" value="1">
+                      <elementDefinition Id="2a6a931a-f698-4bde-aed3-26f738df2427" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d03d1772-48bf-4284-ad73-93db7289fe49" name="Upper" value="*">
+                      <elementDefinition Id="aa09af1e-0357-47af-b34e-02cf19b1fd45" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="9aa9d3a0-37e8-4cac-8a31-8f1286f0a5fb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6c610bca-f158-486a-a6a5-a3ce00b99fdc" />
+          </association>
+          <association Id="010e7fc6-67f6-4fa1-a7d1-5368d15c1aba" isDerived="false" sourceEndRoleName="CMS" targetEndRoleName="CVE" isLeaf="false" isAbstract="false">
+            <classMoniker Id="09335824-b45a-4055-b6a7-47b4da3ca281" LastKnownName="CVE" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf777ef2-0f37-4789-8d07-dbb293c2067a" name="CMS" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3bccad6c-d199-4fcf-8462-a2458e1cd48b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3da8e415-2250-4248-8e71-2b63db61ef76" name="CVE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="3e2a06f2-0592-43ba-b1a6-b4fb5a5ffbb5" name="Lower" value="1">
+                      <elementDefinition Id="0a28564a-fc74-4779-9996-4692978a7d98" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="09c5ab29-b29d-4af8-a548-18b07fd0e863" name="Upper" value="*">
+                      <elementDefinition Id="7d873ac5-d751-4e84-8dae-049619f6603a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="715e7435-5a8d-48ce-ba3c-5f7a55f38faf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="11dfffff-5891-4bdb-a829-7233871759b8" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="04f1f109-dbe6-4126-a4b1-501d60cbc18a" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6d1136be-540b-4e25-a024-8a2503aef7b2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3978b337-923a-47f0-8b39-f50c666c3f29" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="63f587b2-4ecf-448c-8322-e4b51dc681c6" name="DaysVulnerable" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d4bdcf4e-e5bd-47dc-bc42-50ea665c6645" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1f64d440-0b75-4071-9e16-0c7272aa532c" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="ec840c66-5049-475f-acd3-89ac1562316b" name="Plugins" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aae1656a-e11f-4f09-bfe8-aebfdf08d4c8" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="66368b40-f562-4b29-a1bc-f46020448143" LastKnownName="Plugin" />
+            </type_NamedElement>
+          </property>
+          <property Id="1a9c2ebe-7bf9-414f-bf43-8bb83c3b5af2" name="IsVulnerable" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ba2702ff-367c-4fcd-86bd-f74914f8ba09" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="042930d1-3f4f-4e40-822e-9a9ec5ff2a80" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="61ed5e99-53a0-465e-9af5-44d176724f3a" name="Plugin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="26236fe1-317b-4c41-bad3-057ad451eda3" />
+        <targetEnds>
+          <association Id="c6acb629-f890-4890-b1b8-9a8da90f799d" isDerived="false" sourceEndRoleName="Plugin" targetEndRoleName="CVE" isLeaf="false" isAbstract="false">
+            <classMoniker Id="09335824-b45a-4055-b6a7-47b4da3ca281" LastKnownName="CVE" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="370786a8-b3d0-41c7-b3ae-47541bb67c80" name="Plugin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ce188652-9610-4d94-950e-369c24b521df" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1137f7ff-fbf4-4778-a5bf-a28e4c0fd0d0" name="CVE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="228e33e1-96c5-4125-a2c8-2a4f5de2714d" name="Lower" value="1">
+                      <elementDefinition Id="39a9181b-0754-4431-b8dc-b9fe069e66b9" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f336884d-8bc2-4b97-aeca-ab49ff16ac99" name="Upper" value="*">
+                      <elementDefinition Id="1dd15aba-6412-4041-84ae-7c4b9c291bf4" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="f8a424bf-f1fb-40ed-9d74-8bd0c7f12c2c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a958fc33-7364-4336-b511-ffe531282a5e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3b8a1878-cf4d-4585-bc2d-2b8689aa1bea" name="Version" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="701e6d3f-2262-48d9-98d4-3a416cfb1436" />
+          </property>
+          <property Id="05040a8b-aea1-4aaa-b226-80f4e7426ac1" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f91151d2-ffd6-4450-8f28-b36eb02cbaa7" />
+          </property>
+          <property Id="b522af21-eb35-4683-99d2-2a37c293dc1b" name="Downloads" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="698dc7ca-f4c2-40ea-ab30-25c70bd94483" />
+          </property>
+          <property Id="45353dc9-ac45-491a-9346-992a51a76528" name="IsVulnerable" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="78222982-7f35-43ab-945c-a5282b6205ad" />
+          </property>
+          <property Id="c483232c-93fb-4d13-a728-f8cf676971f5" name="CVEs" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="35a91f74-2bf6-4e37-bcfc-96b94099cd53" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3bc92f8c-be1e-43a0-ae67-cda1487a7ecf" LastKnownName="CVE" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="055b7807-6694-4b01-934d-458daa8177a8" name="CMS" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::CMS">
+        <elementDefinition Id="79c354b1-e168-475f-b23f-c3fbee0b482c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c098f5fa-dfc2-42dd-ac41-90db24874bcc" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3c133ec3-b365-4874-a499-fc358ab7dbaa" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ed479e15-47d7-4ad3-a4db-dd5af4ef2e24" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ee1495a7-9457-42cf-88ea-ba150a991c8e" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="042930d1-3f4f-4e40-822e-9a9ec5ff2a80" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3978b337-923a-47f0-8b39-f50c666c3f29" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="66368b40-f562-4b29-a1bc-f46020448143" name="Plugin" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Plugin">
+        <elementDefinition Id="26236fe1-317b-4c41-bad3-057ad451eda3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1f64d440-0b75-4071-9e16-0c7272aa532c" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2d9948c4-a781-4709-a9fe-9fcaae626d4e" name="Vulnerability" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ed56723a-617d-4a7f-ace5-2ecebc9ab9bc" />
+        <ownedAttributesInternal>
+          <property Id="745440fe-7fc9-4a85-826c-d944aaf871df" name="Severity" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="11e994f5-04fe-49b1-befc-8cab63b719b3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="cc970c64-75e7-440f-b6db-9e09f2e627aa" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="7dae103d-da98-4f5a-a3aa-e1de706e9c6c" name="ChanceOfUserCompromise" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8a35b969-559c-47ac-aae7-8240856977ee" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="333098e3-eeb4-4a5a-b2cd-ec969a7c65ce" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="b2df3d86-3d85-482f-8fe9-2ba6dea55b31" name="EaseOfExploitation" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="820590bc-6479-4f88-9f6e-a13485ddb2e7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8f38ba20-6810-4d67-9d0e-b8f76c3aa0a2" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="cc970c64-75e7-440f-b6db-9e09f2e627aa" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d3506b5d-3d40-41ce-922c-894eb22f3fa3" name="SQLInjection" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="43d61086-8bf7-4f96-a34d-9187fd862cc1" />
+        <generalsInternal>
+          <generalization Id="fe3c92e2-e066-4bdf-9822-053907c1a773" isSubstitutable="false">
+            <classMoniker Id="2d9948c4-a781-4709-a9fe-9fcaae626d4e" LastKnownName="Vulnerability" />
+            <elementDefinition Id="62eca722-c5a5-43b7-841c-18e2c21d28e7" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b17352dc-3d90-454b-a2be-ebd7ce775510" name="XSS" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9e7ec3c7-f8b9-4015-8077-677f53fd23b1" />
+        <generalsInternal>
+          <generalization Id="5479dbc9-8a85-4d04-b674-dcd82874d4dc" isSubstitutable="false">
+            <classMoniker Id="2d9948c4-a781-4709-a9fe-9fcaae626d4e" LastKnownName="Vulnerability" />
+            <elementDefinition Id="87c568a5-fbe0-4255-be60-4b21d5b4c3e2" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9e1a6a10-4cff-4aca-bc1f-5f71d2aad8c8" name="EOP" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="81fc52d6-101a-48c8-b258-b4071e020c19" />
+        <generalsInternal>
+          <generalization Id="ec03f016-f837-4dd4-8377-5bad5593488c" isSubstitutable="false">
+            <classMoniker Id="2d9948c4-a781-4709-a9fe-9fcaae626d4e" LastKnownName="Vulnerability" />
+            <elementDefinition Id="87baa9b9-1384-4bd8-a3bc-044b6bd274b2" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="333098e3-eeb4-4a5a-b2cd-ec969a7c65ce" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8f38ba20-6810-4d67-9d0e-b8f76c3aa0a2" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8bdb3aa2-ce9a-4207-9a3f-bbd2afd8e940" name="Browser" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3ed45c36-8bab-49c7-aea1-d83bc2be3c04" />
+        <targetEnds>
+          <association Id="58d24b22-70b5-4e46-b3a6-053ed9ea95e3" isDerived="false" sourceEndRoleName="Browser" targetEndRoleName="CVE" isLeaf="false" isAbstract="false">
+            <classMoniker Id="09335824-b45a-4055-b6a7-47b4da3ca281" LastKnownName="CVE" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4273ec68-93d7-4adf-beef-4de2144fa830" name="Browser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3345058c-f76c-4625-8594-9bda99b52fe1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bea42b57-bfff-4274-af51-a226f26a9c0c" name="CVE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="9ea6baa8-b1af-4f1b-8900-36d5a74c9114" name="Lower" value="1">
+                      <elementDefinition Id="f91f59f6-0bf8-4183-b6ba-c5b148dade87" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="985a3fce-1a35-4787-a756-5210bcab74d0" name="Upper" value="*">
+                      <elementDefinition Id="775d81f0-da71-4218-aaf1-f54ca47ffd1e" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ac5faa16-d833-4dde-97bb-b230593fc061" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="79eba4b1-d09e-4504-b4a3-12b122523888" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="46f475de-b072-4aec-9d33-1f4e886affc2" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="da850428-9e5b-4c2c-836e-1c7ae9fe24b8" />
+          </property>
+          <property Id="720711d2-54f6-427d-8df5-25cea56b6a1f" name="Version" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="82ac0f8c-3e9a-4248-af85-4703ff5e8b87" />
+          </property>
+          <property Id="3f1fa93a-ebce-4ae2-b7f9-cea09588b407" name="Vulnerability" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4d0ea792-4376-42a2-8f26-c25241ebbc08" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9c877eba-93f3-4cf6-9704-86746b6b0036" LastKnownName="CVE" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="09335824-b45a-4055-b6a7-47b4da3ca281" name="CVE" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e3693674-8ee1-484a-8021-9a5b8b7936a4" />
+        <targetEnds>
+          <association Id="e65a938d-a4f0-4124-8afc-5c83753daca1" isDerived="false" sourceEndRoleName="CVE" targetEndRoleName="Vulnerability" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2d9948c4-a781-4709-a9fe-9fcaae626d4e" LastKnownName="Vulnerability" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4cf5ba93-e96f-4135-b327-5827b6cd5ea6" name="CVE" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4444b9ea-aaf0-4730-ba02-eef72195bab4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6548d05-2775-4ee8-8073-64827ecd12d3" name="Vulnerability" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="94869e5c-6fb3-4651-9e96-57389da58485" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e5b4f8b9-bb5e-4d9f-a99e-cfc73220ce32" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="ce0ae9b0-56ad-4469-bec4-2d601e5173c9" name="CVENo" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="66bf633c-65f3-4d0e-8ea6-161435764894" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="38252b02-abf0-49fa-9280-e7d145ed8df4" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="ea270f8f-862b-43d9-86ea-0dfa695fba2d" name="VulnerabilityType" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="efaf840f-b8ba-4611-be90-62b9f7bb23ae" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="412d69ba-03ad-4397-99dc-17f496d65494" LastKnownName="Vulnerability" />
+            </type_NamedElement>
+          </property>
+          <property Id="741f72bd-98fb-448c-b2d3-06f4b797b9c0" name="TimeKnown" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ee93e651-ea64-449a-be79-a8cc184027eb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f7b337ac-0084-4938-9c6e-1b188b560391" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="0f633f7a-6424-4de8-b889-08d31a255e7f" name="IsKnown" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="288aa83d-b71e-46ac-8ee6-d73d1a9a0b01" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="54279a68-c315-4913-8523-db4f42456f9c" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="38252b02-abf0-49fa-9280-e7d145ed8df4" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="412d69ba-03ad-4397-99dc-17f496d65494" name="Vulnerability" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Vulnerability">
+        <elementDefinition Id="ed56723a-617d-4a7f-ace5-2ecebc9ab9bc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f7b337ac-0084-4938-9c6e-1b188b560391" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="54279a68-c315-4913-8523-db4f42456f9c" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9c877eba-93f3-4cf6-9704-86746b6b0036" name="CVE" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::CVE">
+        <elementDefinition Id="e3693674-8ee1-484a-8021-9a5b8b7936a4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9f86888c-92e0-4425-9715-d8a124cc7fbb" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2c3779a8-5556-4e26-9bf6-f2bcade66711" name="CVE" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::CVE">
+        <elementDefinition Id="e3693674-8ee1-484a-8021-9a5b8b7936a4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3bc92f8c-be1e-43a0-ae67-cda1487a7ecf" name="CVE" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::CVE">
+        <elementDefinition Id="e3693674-8ee1-484a-8021-9a5b8b7936a4" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="2d924f6d-7789-46c5-be95-2405288d0bca" name="ModelingProject1">
+    <elementDefinition Id="4b012458-36e3-471d-9a33-f04ed8a9c21f" />
+  </package>
+</logicalClassDesignerModel>
